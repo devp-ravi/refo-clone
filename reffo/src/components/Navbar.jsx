@@ -19,7 +19,7 @@ function Navbar() {
         </div> 
         </div>
         <div className="nav_second">
-          <Button/>
+          <Button  title='Start a Project'/>
 
 
           
