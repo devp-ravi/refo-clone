@@ -15,7 +15,7 @@ function Footer() {
                     {["Instagram", "Twitter (X?)","LinkedIn"].map((item , i)=><a className='text-zinc-600 hover:text-zinc-400 transition-colors flex mb-2 '  key={i}>{item}</a>)}
                 </div>
                 <div className='basis-2/3 flex flex-col items-end  gap-5 text-right  '>
-                    <p>Refokuys is a pioneering digital agency driven by design and empowered by technology.</p>
+                    <p className='text-zinc-200 font-medium' >Refokuys is a pioneering digital agency driven by design and empowered by technology.</p>
                     <img  src="https://assets-global.website-files.com/6334198f239547d0f9cd84b3/63455da11b54556c9d28aa3e_Badge-EnterprisePartner-Blue%201.svg"
                      alt="footer_img" />
                 </div>

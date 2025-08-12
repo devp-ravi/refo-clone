@@ -1,11 +1,12 @@
 import React from 'react'
 import { FaArrowRightLong } from "react-icons/fa6";
+import { motion } from "framer-motion";
 
 
-function Card({width, start, para ,hover="none"} ) {
+function Card({width, start, para ,hover="false"} ) {
   return (
 
-        <div className={`p-5 rounded-xl bg-zinc-800  ${width} hover:${hover} flex flex-col  justify-between min-h-[25rem] `}>
+        <motion.div  whileHover={{ backgroundColor:hover === "true" && "#7443ff" ,padding: "25px" }} className={`p-5 rounded-xl bg-zinc-800  ${width}  flex flex-col  justify-between min-h-[25rem] `}>
             <div className='first w-full '>
                 <div className=' w-full flex justify-between items-center '>
                 <h3  className='font-semibold text-sm' >one heading</h3>
@@ -32,7 +33,7 @@ function Card({width, start, para ,hover="none"} ) {
             </>
 )}
             </div>
-    </div>
+    </motion.div>
   )
 }
 
